@@ -18,17 +18,6 @@ public class RenderPlus implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-            font = new FontAtlas(
-                    Identifier.of(MOD_ID, "fonts/sf_medium.json"),
-                    Identifier.of(MOD_ID, "fonts/sf_medium.png")
-            );
-        });
-        HudRenderCallback.EVENT.register((drawContext, tickCounter) -> {
-            rect(drawContext, 10, 10, 200, 200).radius(15, 40, 70, 5).draw();
-            texture(drawContext, Identifier.of(MOD_ID, "textures/img.png"), 10, 220, 200, 200).radius(15, 40, 70, 5).draw();
-            text(drawContext, font, "RenderPlus!", 220, 60).size(15).draw();
-        });
     }
 
     public static RectBuilder rect(DrawContext ctx, float x, float y, float w, float h) {
