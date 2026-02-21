@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "renderplus",
+  "version": "${version}",
+  "name": "RenderPlus",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/renderplus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "renderplus.renderplus.client.RenderplusClient"
+    ],
+    "main": [
+      "renderplus.renderplus.Renderplus"
+    ]
+  },
+  "mixins": [
+    "renderplus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
