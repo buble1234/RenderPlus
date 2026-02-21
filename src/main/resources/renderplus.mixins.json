@@ -1,11 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "renderplus.renderplus.mixin",
+  "package": "render.plus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
   "client": [
+    "ShaderLoader$CacheMixin",
+    "accessors.BufferBuilderAccessor",
+    "accessors.DrawContextAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

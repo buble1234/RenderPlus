@@ -10,11 +10,8 @@
   "icon": "assets/renderplus/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "renderplus.renderplus.client.RenderplusClient"
-    ],
     "main": [
-      "renderplus.renderplus.Renderplus"
+      "render.plus.RenderPlus"
     ]
   },
   "mixins": [
